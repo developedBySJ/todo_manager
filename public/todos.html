@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo Manager</title>
+    <link rel="stylesheet" href="./todo-app.css" />
+  </head>
+  <body>
+    <main class="TodoPageMain">
+      <article>
+        <h1 class="Todopage-title">My To-do List</h1>
+        <section class="AddTodo">
+          <input
+            type="text"
+            class="AddTodo-input AddTodo-text"
+            placeholder="What's Next"
+          />
+          <input
+            type="date"
+            class="AddTodo-input AddTodo-date"
+            placeholder=""
+          />
+          <input type="button" class="AddTodo-input AddTodo-btn" value="Add" />
+        </section>
+        <section class="TodoSection">
+          <div class="TodoSectionTitle">
+            <p class="TodoSectionTitle-text">Due Today</p>
+            <p class="TodoSectionTitle-remainingCount">0/4</p>
+          </div>
+          <ul class="TodoItem-container">
+            <li class="TodoItem">
+              <input type="checkbox" class="TodoItem-checkbox" />
+              Type Something
+              <p class="TodoItem-overdueLabel">Overdue</p>
+              <a href="#" class="TodoItem-delete"
+                ><img
+                  class="TodoItem-delete-icon"
+                  src="./trash.svg"
+                  alt="delete icon"
+              /></a>
+            </li>
+            <li class="TodoItem">
+              <input type="checkbox" class="TodoItem-checkbox" />
+              Type Something
+              <a href="#" class="TodoItem-delete"
+                ><img
+                  class="TodoItem-delete-icon"
+                  src="./trash.svg"
+                  alt="delete icon"
+              /></a>
+            </li>
+          </ul>
+        </section>
+        <section class="TodoSection">
+          <div class="TodoSectionTitle">
+            <p class="TodoSectionTitle-text">Due Tomorrow</p>
+            <p class="TodoSectionTitle-remainingCount">0/3</p>
+          </div>
+          <ul class="TodoItem-container">
+            <li class="TodoItem">
+              <input type="checkbox" class="TodoItem-checkbox" />
+              Type Something
+              <p class="TodoItem-overdueLabel">Overdue</p>
+              <a href="#" class="TodoItem-delete"
+                ><img
+                  class="TodoItem-delete-icon"
+                  src="./trash.svg"
+                  alt="delete icon"
+              /></a>
+            </li>
+          </ul>
+        </section>
+        <section class="TodoSection">
+          <div class="TodoSectionTitle">
+            <p class="TodoSectionTitle-text">Remaining</p>
+            <p class="TodoSectionTitle-remainingCount">0/3</p>
+          </div>
+          <ul class="TodoItem-container">
+            <li class="TodoItem">
+              <input type="checkbox" class="TodoItem-checkbox" />
+              Type Something
+              <p class="TodoItem-date">Jan 21</p>
+              <a href="#" class="TodoItem-delete"
+                ><img
+                  class="TodoItem-delete-icon"
+                  src="./trash.svg"
+                  alt="delete icon"
+              /></a>
+            </li>
+            <li class="TodoItem">
+              <input type="checkbox" class="TodoItem-checkbox" />
+              Type Something
+              <p class="TodoItem-date">Jan 21</p>
+              <a href="#" class="TodoItem-delete"
+                ><img
+                  class="TodoItem-delete-icon"
+                  src="./trash.svg"
+                  alt="delete icon"
+              /></a>
+            </li>
+            <li class="TodoItem">
+              <input type="checkbox" class="TodoItem-checkbox" />
+              Type Something
+              <p class="TodoItem-date">Jan 21</p>
+              <a href="#" class="TodoItem-delete"
+                ><img
+                  class="TodoItem-delete-icon"
+                  src="./trash.svg"
+                  alt="delete icon"
+              /></a>
+            </li>
+          </ul>
+        </section>
+      </article>
+    </main>
+  </body>
+</html>

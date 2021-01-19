@@ -1,0 +1,107 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+html {
+  font-family: "Open Sans", sans-serif;
+}
+
+.TodoPageMain {
+  max-width: 600px;
+  margin: 0 auto;
+  margin-top: 10vh;
+}
+.Todopage-title {
+  font-size: 20px;
+  color: #453c52;
+  letter-spacing: 0.14px;
+  font-weight: bold;
+}
+.AddTodo {
+  display: flex;
+  margin: 16px 0 24px 0;
+}
+.AddTodo-input {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  color: #726a7e;
+  letter-spacing: 0.1px;
+  background: #ffffff;
+  border: 1px solid #bfb8cc;
+  border-radius: 4px;
+  padding: 6px 12px;
+  margin-right: 8px;
+}
+.AddTodo-input:focus {
+  outline-color: #40a76b;
+}
+.AddTodo-btn {
+  padding: 6px 24px;
+  background: #48bb78;
+  color: white;
+  cursor: pointer;
+}
+.AddTodo-btn:hover {
+  background: #40a76b;
+}
+.TodoSection {
+  margin-bottom: 24px;
+}
+.TodoSectionTitle {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+  color: #453c52;
+  letter-spacing: 0.1px;
+}
+.TodoSectionTitle-text {
+  font-size: 14px;
+  font-weight: bold;
+  margin-right: 8px;
+}
+.TodoSectionTitle-remainingCount {
+  font-size: 12px;
+}
+.TodoItem-container {
+  margin-left: 12px;
+  display: flex;
+  flex-direction: column;
+}
+.TodoItem {
+  padding: 12px;
+  display: inline-flex;
+  align-items: center;
+  font-size: 14px;
+  justify-content: start;
+  border-radius: 4px;
+}
+.TodoItem-checkbox {
+  width: 16px;
+  height: 16px;
+  margin-right: 12px;
+}
+.TodoItem-overdueLabel {
+  margin-left: 12px;
+  font-size: 12px;
+  color: #c53030;
+  letter-spacing: 0.09px;
+}
+.TodoItem-delete {
+  margin-left: 12px;
+}
+.TodoItem-date {
+  margin-left: 12px;
+  font-size: 12px;
+  color: #726a7e;
+  letter-spacing: 0.09px;
+}
+.TodoItem-delete-icon {
+  width: 16px;
+  height: 16px;
+
+  visibility: hidden;
+}
+.TodoItem:hover {
+  background-color: #f1edf7;
+}
+.TodoItem:hover .TodoItem-delete-icon {
+  visibility: visible;
+}
