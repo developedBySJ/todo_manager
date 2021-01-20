@@ -78,7 +78,9 @@ html {
   height: 16px;
   margin-right: 12px;
 }
-
+.TodoItem-completed {
+  text-decoration: line-through;
+}
 .TodoItem-delete {
   margin-left: 12px;
 }

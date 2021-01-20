@@ -15,6 +15,10 @@ class Todo < ActiveRecord::Base
     all.where(completed: true)
   end
 
+  def self.remaining
+    all.where(completed: false)
+  end
+
   def to_pleasant_string
     "#{id}. #{due_date.to_s} #{todo_text} #{completed ? "[X]" : "[ ]"}"
   end
