@@ -2,13 +2,7 @@
   <article>
     <h1 class="Todopage-title">My To-do List</h1>
     <%= form_with(url: "todos", method: "post", class: "AddTodo") do %>
-      <input
-        type="text"
-        class="AddTodo-input AddTodo-text"
-        placeholder="What's Next"
-        name="todo_text"
-        required
-      />
+      <%= text_field_tag "todo_text", nil, class: "AddTodo-input AddTodo-text", placeholder: "What's Nex" %>
       <input
         type="date"
         class="AddTodo-input AddTodo-date"
