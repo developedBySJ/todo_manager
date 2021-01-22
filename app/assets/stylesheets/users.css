@@ -1,0 +1,30 @@
+.UserNew-title {
+  font-size: 20px;
+  color: #453c52;
+  letter-spacing: 0.14px;
+  font-weight: bold;
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+.UserMainPage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 48px;
+}
+.User-input {
+  margin: 0;
+  width: 300px;
+}
+.User-submit {
+  width: 100%;
+  padding: 12px;
+  margin-top: 24px;
+}
+.Form-section {
+  margin-bottom: 16px;
+}
+.Form-label {
+  margin-bottom: 4px;
+}

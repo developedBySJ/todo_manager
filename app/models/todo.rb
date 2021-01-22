@@ -1,6 +1,8 @@
 class Todo < ActiveRecord::Base
+  belongs_to :user
+
   def self.overdue
-    all.where("due_date < ?", Date.today)
+    all.where("due_date < ? and (not completed)", Date.today)
   end
 
   def self.due_today

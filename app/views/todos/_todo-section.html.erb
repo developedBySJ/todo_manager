@@ -4,8 +4,7 @@
     <p class="TodoSectionTitle-remainingCount"><%= todos.completed.count %>/<%= todos.count %></p>
   </div>
   <ul class="TodoItem-container">
-    <% todos = show_completed ? todos : todos.remaining
-       todos.each do |todo| %>
+    <% todos.each do |todo| %>
       <li class="TodoItem">
         <%= form_with(url: "todos/#{todo.id}", method: "put") do %>
           <input 

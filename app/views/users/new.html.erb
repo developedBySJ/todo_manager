@@ -1,0 +1,26 @@
+<main class="Container UserMainPage">
+  <section class= "UserNew">
+  <p class="UserNew-title" >Welcome New User</p>
+    <%= form_with url: users_path do |form| %>
+      <div class="Form-section" >
+        <p class="Form-label" >First Name :</p>
+        <%= form.text_field :first_name, class: "Form-input User-input" %>
+      </div>
+      <div class="Form-section" >
+        <p class="Form-label" >Last Name :</p>
+        <%= form.text_field :last_name, class: "Form-input User-input" %>
+      </div>
+      <div class="Form-section" >
+        <p class="Form-label" >Email :</p>
+        <%= form.email_field :email, class: "Form-input User-input" %>
+      </div>
+      <div class="Form-section" >
+        <p class="Form-label" >Password :</p>
+        <%= form.password_field :password, class: "Form-input User-input" %>
+      </div>
+      <div class="Form-section" >
+        <%= form.submit "Sign Up!", class: "Btn Btn-primary User-submit" %>
+      </div>
+    <% end %>
+  </section>  
+</main>
