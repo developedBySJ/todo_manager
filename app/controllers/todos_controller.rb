@@ -1,6 +1,6 @@
 class TodosController < ApplicationController
   def index
-    @todos = Todo.where(user_id: current_user.id)
+    @todos = current_user.todos
     render "index"
   end
 

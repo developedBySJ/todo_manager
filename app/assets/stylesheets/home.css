@@ -19,3 +19,9 @@
 .UserHeader-signOut {
   color: black;
 }
+.Error {
+  text-align: center;
+  padding: 12px 16px;
+  background-color: #ffefed;
+  color: rgb(171, 19, 0);
+}

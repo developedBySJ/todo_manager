@@ -20,6 +20,17 @@
       <h1 class="UserHeader-name">Welcome <%= @current_user.first_name %></h1>
       <%= link_to "Sign-Out", destroy_session_path, method: "delete", class: "UserHeader-signOut" %>
     </header>
-    <% end %> <%= yield %>
+    <% end %> 
+    <% if flash[:error] %>
+      <div class="Container">
+        <h1 class="Error" >
+        <%= flash[:error] %>
+        </h1>
+      </div>
+    <% end %>
+   
+
+    <%= yield %>
+    
   </body>
 </html>
