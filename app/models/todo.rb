@@ -1,4 +1,4 @@
-class Todo < ActiveRecord::Base
+class Todo < ApplicationRecord
   validates :todo_text, presence: true
   validates :todo_text, length: { minimum: 2 }
   validates :due_date, presence: true

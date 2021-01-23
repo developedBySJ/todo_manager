@@ -23,9 +23,13 @@
     <% end %> 
     <% if flash[:error] %>
       <div class="Container">
-        <h1 class="Error" >
-        <%= flash[:error] %>
-        </h1>
+      <ul class="ErrorContainer">
+        <% flash[:error].split("|").each do |err| %>
+          <li class="Error" >
+            <%= err %>
+          </li>
+        <% end %>
+      </ul>
       </div>
     <% end %>
    
