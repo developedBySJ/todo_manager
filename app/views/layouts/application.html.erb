@@ -2,15 +2,24 @@
 <html>
   <head>
     <title>TodoManager</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
-
-    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+    />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <%= csrf_meta_tags %> 
+    <%= csp_meta_tag %> 
+    <%= stylesheet_link_tag "application", media: "all", 'data-turbolinks-track': "reload" %> 
+    <%= javascript_pack_tag "application", 'data-turbolinks-track': "reload" %>
+    
   </head>
 
   <body>
-    <%= yield %>
+    <% if @current_user %>
+    <header class="UserHeader">
+      <h1 class="UserHeader-name">Welcome <%= @current_user.first_name %></h1>
+      <%= link_to "Sign-Out", destroy_session_path, method: "delete", class: "UserHeader-signOut" %>
+    </header>
+    <% end %> <%= yield %>
   </body>
 </html>

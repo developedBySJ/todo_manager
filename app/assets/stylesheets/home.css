@@ -1,6 +1,21 @@
 .Home-heading {
   font-size: 32px;
+  margin-bottom: 32px;
 }
 .Home-text {
   font-size: 16px;
+  margin: 16px 0;
+}
+.UserHeader {
+  width: 600px;
+  margin: 0 auto;
+  margin-top: 8vh;
+  display: flex;
+  justify-content: space-between;
+  background-color: #f1edf7;
+  padding: 16px 16px;
+  border-radius: 4px;
+}
+.UserHeader-signOut {
+  color: black;
 }

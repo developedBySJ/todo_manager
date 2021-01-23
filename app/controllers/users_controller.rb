@@ -21,7 +21,7 @@ class UsersController < ApplicationController
       email: email,
       password: password,
     })
-    render plain: "Welcome, we created your profile with id #{user.id}"
+    redirect_to "/"
   end
 
   def login
