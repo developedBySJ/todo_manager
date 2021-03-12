@@ -1,24 +1,18 @@
-# README
+# Todo Manager
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Simple todo application created by using Ruby Rails
 
-Things you may want to cover:
+#### Features
 
-* Ruby version
+- User Authentication
+- User can view, add, delete todo and mark todo as completed
 
-* System dependencies
+#### Overview
 
-* Configuration
+![Sign In](https://drive.google.com/uc?export=view&id=1ak7YoyLDnSnwtF_M74KOcO90keEXkPfF)
+![Sign Up](https://drive.google.com/uc?export=view&id=1ixqSgLKatoZOe9HsrAfvzM-TKZsbWcd8)
+![Todo List](https://drive.google.com/uc?export=view&id=1eOlZEoGRcQ_kmvU-LpOWKSUb_5RJJelH)
 
-* Database creation
+#### Live Application
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+[https://swapnil-todo-manager-saas-201.herokuapp.com/](https://swapnil-todo-manager-saas-201.herokuapp.com)
