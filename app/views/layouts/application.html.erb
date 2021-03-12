@@ -23,9 +23,20 @@
     <% end %> 
     <% if flash[:error] %>
       <div class="Container">
-      <ul class="ErrorContainer">
+      <ul class="FlashContainer">
         <% flash[:error].split("|").each do |err| %>
           <li class="Error" >
+            <%= err %>
+          </li>
+        <% end %>
+      </ul>
+      </div>
+    <% end %>
+    <% if flash[:success] %>
+      <div class="Container">
+      <ul class="FlashContainer">
+        <% flash[:success].split("|").each do |err| %>
+          <li class="Success" >
             <%= err %>
           </li>
         <% end %>

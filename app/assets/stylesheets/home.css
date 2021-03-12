@@ -19,14 +19,20 @@
 .UserHeader-signOut {
   color: black;
 }
-.ErrorContainer {
+.FlashContainer {
   padding: 12px 40px;
   margin: 0 auto;
-  background-color: #ffefed;
+  list-style: none;
   border-radius: 4px;
-  list-style: disc;
+  text-align: center;
 }
 .Error {
   padding: 12px 12px;
-  color: rgb(171, 19, 0);
+  color: #dc2626;
+  background-color: #fee2e2;
+}
+.Success {
+  padding: 12px 12px;
+  color: #059669;
+  background-color: #ecfdf5;
 }

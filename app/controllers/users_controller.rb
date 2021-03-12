@@ -22,7 +22,8 @@ class UsersController < ApplicationController
       password: password,
     })
     if new_user.save
-      redirect_to "/"
+      flash[:success] = "you've signed-up successfully, now please sign-in to continue"
+      redirect_to new_sessions_path
     else
       flash[:error] = new_user.errors.full_messages.join("|")
       redirect_to new_user_path
